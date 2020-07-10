@@ -21,8 +21,8 @@ password = '12345678'
 #Run sshd
 get_ipython().system_raw('/usr/sbin/sshd -D &')
 
-!get https://raw.githubusercontent.com/117503445/colab_ssh_frp/master/frpc.ini
-!get https://raw.githubusercontent.com/117503445/colab_ssh_frp/master/frpc
+!wget https://raw.githubusercontent.com/117503445/colab_ssh_frp/master/frpc.ini
+!wget https://raw.githubusercontent.com/117503445/colab_ssh_frp/master/frpc
 !chmod +x frpc
 
 !./frpc
