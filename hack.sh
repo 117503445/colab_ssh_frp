@@ -11,6 +11,10 @@ password = '12345678'
 ! mkdir -p /var/run/sshd
 ! echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 ! echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+! echo "RSAAuthentication yes" >> /etc/ssh/sshd_config
+! echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
+! echo "AuthorizedKeysFile .ssh/authorized_keys" >> /etc/ssh/sshd_config
+
 ! echo "LD_LIBRARY_PATH=/usr/lib64-nvidia" >> /root/.bashrc
 ! echo "export LD_LIBRARY_PATH" >> /root/.bashrc
 
